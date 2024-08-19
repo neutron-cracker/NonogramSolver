@@ -17,4 +17,5 @@ public class NonogramClue
     public IEnumerable<int> Values => values;
     public int Sum { get; }
     public int BiggestQueue => values.Max();
+    public int FilledArea => Sum + values.Count - 1;
 }

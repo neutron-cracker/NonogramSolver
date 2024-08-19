@@ -2,7 +2,7 @@
 
 public enum SolutionValue
 {
-    NotSolved,
-    White,
-    Black
+    NotSolved = 0,
+    Marked = 1,
+    NotMarked = 2,
 }

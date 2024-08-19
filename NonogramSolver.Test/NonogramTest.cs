@@ -17,9 +17,9 @@ public class NonogramTest
         var solution = nonogram.Solve();
 
         // Assert
-        Assert.That(solution.GetSolutionAtLocation(0, 7), Is.EqualTo(SolutionValue.Black));
-        Assert.That(solution.GetSolutionAtLocation(9, 4), Is.EqualTo(SolutionValue.White));
-        Assert.That(solution.GetSolutionAtLocation(9, 5), Is.EqualTo(SolutionValue.White));
-        Assert.That(solution.GetSolutionAtLocation(9, 7), Is.EqualTo(SolutionValue.Black));
+        Assert.That(solution.GetSolutionAtLocation(0, 7), Is.EqualTo(SolutionValue.Marked));
+        Assert.That(solution.GetSolutionAtLocation(9, 4), Is.EqualTo(SolutionValue.NotMarked));
+        Assert.That(solution.GetSolutionAtLocation(9, 5), Is.EqualTo(SolutionValue.NotMarked));
+        Assert.That(solution.GetSolutionAtLocation(9, 7), Is.EqualTo(SolutionValue.Marked));
     }
 }
